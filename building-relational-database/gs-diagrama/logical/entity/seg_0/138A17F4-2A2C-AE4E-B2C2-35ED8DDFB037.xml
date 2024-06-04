@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="138A17F4-2A2C-AE4E-B2C2-35ED8DDFB037" name="ESCOLAS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:26:56 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_escola" id="331CE11F-CF32-BECE-88EA-740FE73343F5">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:27:05 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="39680062-E440-9F23-5C72-900EE460048F">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:27:17 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="8165BB10-B5CA-1413-8B8D-68995C6F35B2">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:27:35 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="38664F8E-EECB-57FD-6DB9-BF286BD5AA6E">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:27:55 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="4FF72A17-4C61-A9E3-EF86-0345328397C2">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:28:20 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contato" id="75BE7075-B5BD-E24E-8251-51420339C081">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:28:30 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacao" id="7987D782-0863-40F4-526E-7440742F652C">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:28:57 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_endereco" id="C468CB89-C388-83FC-D6BF-1EE22FA36719">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:35:12 UTC</createdTime>
+<generatorID>C800CCA5-A5FF-9B2B-5809-466E73C39BD1</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C1F2B4E5-8710-F5E5-7160-777E558C498B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3D19AD66-A798-74C3-5A8C-6D40A5ECF74C" name="ESCOLAS PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:27:15 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>331CE11F-CF32-BECE-88EA-740FE73343F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

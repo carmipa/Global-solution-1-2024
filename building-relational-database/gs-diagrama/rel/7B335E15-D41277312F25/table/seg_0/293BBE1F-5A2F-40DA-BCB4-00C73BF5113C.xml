@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="293BBE1F-5A2F-40DA-BCB4-00C73BF5113C" name="MATERIAIS_ALUNOS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>7E65B61F-733C-30F5-5932-60B9C9EB861C</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_materiais_alunos" id="D21AA166-B6DB-F1A0-A99C-D54198EC6F96">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>1968ED16-7737-A3E1-91DD-959100093EC9</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATERIAIS_cod_material" id="47D4A50C-AB50-7A94-137C-93836AA3E25A">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>5AD903F2-B23F-3699-5EBC-6E1EC67C70E7</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95AE1975-204B-D622-5B0B-FBD3BF0D9D88" referredColumn="D552D359-90E7-2D79-52D0-55DB3397372B"/>
+</associations>
+</Column>
+<Column name="ALUNOS_cod_aluno" id="F3B7DA61-F452-BBC8-4B68-64336E142631">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>913AFA0D-7157-CDC2-6CBE-EE6D95193EE0</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F798E7C-75FD-C490-1362-A019DEECC79A" referredColumn="B0F2F367-A58D-B7F9-A64F-DFB1B21031AF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5926BF48-9E47-18A6-A7CA-BD5CDDE5C751" name="MATERIAIS_ALUNOS_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>D39B3D9C-412D-14BB-6A67-BCC63505A271</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D21AA166-B6DB-F1A0-A99C-D54198EC6F96"/>
+<colUsage columnID="47D4A50C-AB50-7A94-137C-93836AA3E25A"/>
+<colUsage columnID="F3B7DA61-F452-BBC8-4B68-64336E142631"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78BC919B-91ED-06EF-C46B-7B88B101DAAB" name="MATERIAIS_ALUNOS_MATERIAIS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>5691E01F-0D69-21E0-FFDA-FCDBF71B1AAD</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47D4A50C-AB50-7A94-137C-93836AA3E25A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB8FD81E-DF54-B376-676C-5D78114761FE" name="MATERIAIS_ALUNOS_ALUNOS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>B30672B3-CDF8-76DE-6733-15710A6B5548</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3B7DA61-F452-BBC8-4B68-64336E142631"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

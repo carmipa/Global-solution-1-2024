@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="388EAED7-70A4-EED8-7D62-7A3747035C89" name="JOGOS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:14:40 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_jogo" id="23952237-029F-6182-3B03-A731991EDE60">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:14:47 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pontos" id="2556026F-90A5-D27C-E5F7-037C55E06B3F">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:14:57 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantidade_participacoes" id="CBA60757-FEE9-87D2-2F27-8C23255FBBC5">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:15:22 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_pontos" id="F9C430A2-1528-A1EF-468A-EC4B798CF489">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:15:58 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_participacao" id="A44FF26F-1256-385A-3EF2-137826732F20">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:17:50 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacao" id="607B4713-DAF5-30BD-5708-76D12D992726">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:18:03 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C873337D-7E2E-B8FC-5AA0-17E11C2A821B" name="JOGOS PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:14:55 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>23952237-029F-6182-3B03-A731991EDE60</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

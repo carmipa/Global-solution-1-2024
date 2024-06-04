@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69FE99CE-25A8-0232-62A3-77F426DBABBE" name="MATERIAIS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:11:59 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_material" id="2F288C0C-D545-3D5D-7D18-2DD3661A7CBE">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:12:09 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_material" id="66C9318B-D357-0DC1-5A6E-D0F7EF8C9798">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:12:22 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="peso_material" id="F825ED57-A44C-5DD4-8650-CF527A820B59">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:12:44 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total" id="15456839-C4E2-4443-5D97-316A455EB40D">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:13:10 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="observacao" id="E9AD0056-370F-6615-C7A5-9DCCAD49B336">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:13:24 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F62165E-33EE-E2FA-939C-677F506F6104" name="MATERIAIS PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:12:21 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2F288C0C-D545-3D5D-7D18-2DD3661A7CBE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

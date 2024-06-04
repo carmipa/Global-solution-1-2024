@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C4707D5-CBE4-2849-D3F8-D70F78159050" name="MATERIAIS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>69FE99CE-25A8-0232-62A3-77F426DBABBE</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_material" id="D552D359-90E7-2D79-52D0-55DB3397372B">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>2F288C0C-D545-3D5D-7D18-2DD3661A7CBE</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_material" id="D3D5D970-94C9-9920-9DE5-93249CD17D17">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>66C9318B-D357-0DC1-5A6E-D0F7EF8C9798</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="peso_material" id="DF87C182-D860-FEFE-BD55-9C69319E596D">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>F825ED57-A44C-5DD4-8650-CF527A820B59</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total" id="7410497D-7527-52B4-0A28-AF0C3CCA8E75">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>15456839-C4E2-4443-5D97-316A455EB40D</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacao" id="38B75F52-37F3-3CB1-DCD5-C009DDCDA40F">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>E9AD0056-370F-6615-C7A5-9DCCAD49B336</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5D0E092-817F-56E9-9A08-AA636AD875EC" name="MATERIAIS_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>4F62165E-33EE-E2FA-939C-677F506F6104</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D552D359-90E7-2D79-52D0-55DB3397372B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

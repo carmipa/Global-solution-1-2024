@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DCEF87AF-0CC2-B2B2-D217-DBE4B69D493E" name="MATERIAIS_JOGOS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:18:27 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_material_jogo" id="73523F31-45CF-9965-D044-9AE523AE32D5">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:18:39 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_material" id="1CE93A4F-3834-B917-7A3D-7EE2503B2E35">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:19:17 UTC</createdTime>
+<generatorID>7AE3C880-1B33-E18A-E02F-83410008E548</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<referedAttribute>2F288C0C-D545-3D5D-7D18-2DD3661A7CBE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_jogo" id="3ED06247-2D75-0EB2-A6EB-09019F88DB7B">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:19:21 UTC</createdTime>
+<generatorID>73B9FFA1-9D84-96E3-C5F0-8003A4D6C1C5</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<referedAttribute>23952237-029F-6182-3B03-A731991EDE60</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B8B114D9-0F27-1688-3FB8-47801A2FFB41" name="MATERIAIS_JOGOS PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:18:54 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<engineerTo>
+<item key="7B335E15-F73E-341E-85F0-D41277312F25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>73523F31-45CF-9965-D044-9AE523AE32D5</attributeRef>
+<attributeRef>3ED06247-2D75-0EB2-A6EB-09019F88DB7B</attributeRef>
+<attributeRef>1CE93A4F-3834-B917-7A3D-7EE2503B2E35</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C337E41D-CF92-72ED-D318-0362D1EF1416" containerWithKeyObject="A3CA5420-CC6D-921F-AE66-3DB91094C7D7" localFKIndex="07D767CC-8240-4766-DC79-5C75B0E93D0C" name="MATERIAIS_JOGOS_MATERIAIS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>7AE3C880-1B33-E18A-E02F-83410008E548</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<referredTableLongName>MATERIAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4C4707D5-CBE4-2849-D3F8-D70F78159050</referredTableID>
+<keyObject>C5D0E092-817F-56E9-9A08-AA636AD875EC</keyObject>
+<referredKeyID>C5D0E092-817F-56E9-9A08-AA636AD875EC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_material</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="83622AB4-344C-5019-C9D5-48385714D1A7" containerWithKeyObject="0645F83F-5D31-CC71-D7E8-16F009CA1A57" localFKIndex="5A3BA2F8-FD8F-FAE3-182A-BDA2D909C1D3" name="ALUNOS_JOGOS_JOGOS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>2A59ED39-4DB1-917D-3E7C-C4845F79A6FA</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<referredTableLongName>JOGOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>979C1C82-5D0F-0360-43F0-52965D415871</referredTableID>
+<keyObject>D420ED9A-F6C6-33EF-47A2-E28EBBD30577</keyObject>
+<referredKeyID>D420ED9A-F6C6-33EF-47A2-E28EBBD30577</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_jogo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

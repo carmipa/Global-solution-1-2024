@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="06EF203F-CC53-D7A0-3858-ABF2BC705A35" mainViewID="306365BB-87AD-04AF-15D3-4324BED514E1">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:11:38 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

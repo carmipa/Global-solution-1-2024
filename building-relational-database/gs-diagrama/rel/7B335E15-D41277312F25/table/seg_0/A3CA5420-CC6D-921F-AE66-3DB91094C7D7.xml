@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3CA5420-CC6D-921F-AE66-3DB91094C7D7" name="MATERIAIS_JOGOS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>DCEF87AF-0CC2-B2B2-D217-DBE4B69D493E</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_material_jogo" id="D37027D5-51A7-9C15-55F0-9B3EDF7DE79C">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>73523F31-45CF-9965-D044-9AE523AE32D5</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATERIAIS_cod_material" id="521F8D6D-0BAD-6617-CCBD-602440C42BB1">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>1CE93A4F-3834-B917-7A3D-7EE2503B2E35</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C337E41D-CF92-72ED-D318-0362D1EF1416" referredColumn="D552D359-90E7-2D79-52D0-55DB3397372B"/>
+</associations>
+</Column>
+<Column name="JOGOS_cod_jogo" id="C87448C5-789F-ACF7-33DC-FE2855A2A593">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>3ED06247-2D75-0EB2-A6EB-09019F88DB7B</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3ABDE853-4300-F681-0ABA-8D5F2F36D5ED" referredColumn="59CC024A-8867-AF3E-460F-6EA0B0BB757D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CE7D7DAD-0811-FB3A-FAAB-4039E6CB367F" name="MATERIAIS_JOGOS_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>B8B114D9-0F27-1688-3FB8-47801A2FFB41</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D37027D5-51A7-9C15-55F0-9B3EDF7DE79C"/>
+<colUsage columnID="C87448C5-789F-ACF7-33DC-FE2855A2A593"/>
+<colUsage columnID="521F8D6D-0BAD-6617-CCBD-602440C42BB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07D767CC-8240-4766-DC79-5C75B0E93D0C" name="MATERIAIS_JOGOS_MATERIAIS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>7AE3C880-1B33-E18A-E02F-83410008E548</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="521F8D6D-0BAD-6617-CCBD-602440C42BB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7ECE2E80-8457-4125-E187-189553A1071D" name="MATERIAIS_JOGOS_JOGOS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:36:24 UTC</createdTime>
+<generatorID>73B9FFA1-9D84-96E3-C5F0-8003A4D6C1C5</generatorID>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C87448C5-789F-ACF7-33DC-FE2855A2A593"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

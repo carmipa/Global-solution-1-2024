@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="FC055A77-2DCA-4A2E-7443-DD1D88AC2F23">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-05-31 14:11:38 UTC</createdTime>
+<ownerDesignName>gs-diagrama</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>
