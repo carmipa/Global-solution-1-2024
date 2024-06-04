@@ -1,0 +1,19 @@
+package br.com.fiap.gs.beans;
+
+public class Jogos {
+	
+	@SuppressWarnings("unused")
+	private int codigoAluno;
+	
+	private String nome;
+	private String sobrenome;
+	private String dataNascimento;
+	private String telefone;
+	private String email;
+	private String contato;
+	private String observacao;
+	private Escolas escolas;
+	private Materiais materiais;
+	private Jogos jogos;
+
+}

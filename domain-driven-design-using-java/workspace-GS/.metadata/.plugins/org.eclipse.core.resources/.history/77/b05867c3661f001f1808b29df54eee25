@@ -1,0 +1,5 @@
+package br.com.fiap.gs.beans;
+
+public class Jogos extends Enderecos {
+
+}

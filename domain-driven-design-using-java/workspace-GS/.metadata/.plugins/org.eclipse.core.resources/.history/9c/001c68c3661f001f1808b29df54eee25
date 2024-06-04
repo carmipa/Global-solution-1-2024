@@ -1,0 +1,40 @@
+package br.com.fiap.gs.beans;
+
+public class Alunos extends Enderecos{
+	
+	@SuppressWarnings("unused")
+	private int codigoAluno;
+
+	private String nome;
+	private String sobrenome;
+	private String dataNascimento;
+	private String telefone;
+	private String email;
+	private String contato;
+	private String observacao;
+	private Escolas escolas;
+	private Materiais materiais;
+	private Jogos jogos;
+	public Alunos() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Alunos(String logradouro, int numeroLogradouro, String bairro, String cidade, String estado, String cep,
+			String complemento, String observacao, String nome, String sobrenome, String dataNascimento,
+			String telefone, String email, String contato, String observacao2) {
+		super(logradouro, numeroLogradouro, bairro, cidade, estado, cep, complemento, observacao);
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.dataNascimento = dataNascimento;
+		this.telefone = telefone;
+		this.email = email;
+		this.contato = contato;
+		observacao = observacao2;
+	}
+	
+	
+	
+	
+	
+
+}

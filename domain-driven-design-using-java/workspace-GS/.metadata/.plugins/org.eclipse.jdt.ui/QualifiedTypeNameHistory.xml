@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="br.com.fiap.gs.beans.Enderecos"/>
+    <fullyQualifiedTypeName name="br.com.fiap.gs.beans.Materiais"/>
+    <fullyQualifiedTypeName name="java.net.spi.InetAddressResolver"/>
+    <fullyQualifiedTypeName name="br.com.fiap.gs.interfaces.Jogos"/>
+    <fullyQualifiedTypeName name="br.com.fiap.gs.interfaces.Ijogos"/>
+    <fullyQualifiedTypeName name="br.com.fiap.gs.interfaces.Imateriais"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>
