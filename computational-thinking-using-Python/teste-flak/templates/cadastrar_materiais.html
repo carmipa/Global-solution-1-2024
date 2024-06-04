@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Materiais</title>
+    <style>
+        /* Estilos para o formulário */
+    </style>
+</head>
+<body>
+    <h1>Cadastrar Materiais</h1>
+    <form method="POST" action="{{ url_for('cadastrar_materiais') }}">
+        <label for="tipo_material">Tipo do Material:</label><br>
+        <input type="text" id="tipo_material" name="tipo_material"><br><br>
+
+        <label for="peso_material">Peso do Material (kg):</label><br>
+        <input type="text" id="peso_material" name="peso_material"><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

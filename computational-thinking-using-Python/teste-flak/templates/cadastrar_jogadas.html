@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Jogadas</title>
+    <style>
+        /* Estilos para o formulário */
+    </style>
+</head>
+<body>
+    <h1>Cadastrar Jogadas</h1>
+    <form method="POST" action="{{ url_for('cadastrar_jogadas') }}">
+        <label for="pontos">Pontos do Jogador:</label><br>
+        <input type="text" id="pontos" name="pontos"><br><br>
+
+        <label for="observacao">Observação:</label><br>
+        <textarea id="observacao" name="observacao"></textarea><br><br>
+
+        <input type="hidden" name="continuar" value="s">
+        <input type="submit" value="Adicionar Jogada">
+    </form>
+    <button onclick="window.location.href='{{ url_for('cadastrar_jogadas') }}'">
+        Finalizar Cadastro de Jogadas
+    </button>
+</body>
+</html>

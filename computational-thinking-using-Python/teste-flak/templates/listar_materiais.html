@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Materiais</title>
+    <style>
+        /* Estilos para a tabela */
+    </style>
+</head>
+<body>
+    <h1>Lista de Materiais</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Peso (kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for material in materiais %}
+            <tr>
+                <td>{{ material.tipo }}</td>
+                <td>{{ material.peso }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

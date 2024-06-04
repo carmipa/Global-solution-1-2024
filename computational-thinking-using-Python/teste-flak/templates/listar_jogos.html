@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Jogadas</title>
+    <style>
+        /* Estilos para a tabela */
+    </style>
+</head>
+<body>
+    <h1>Lista de Jogadas</h1>
+    {% for jogada in jogos %}
+        <h2>Jogada {{ loop.index }}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pontos</th>
+                    <th>Participação</th>
+                    <th>Total de Pontos</th>
+                    <th>Data</th>
+                    <th>Observação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dado in jogada %}
+                <tr>
+                    <td>{{ dado.pontos }}</td>
+                    <td>{{ dado.participacao }}</td>
+                    <td>{{ dado.total_pontos }}</td>
+                    <td>{{ dado.data }}</td>
+                    <td>{{ dado.observacao }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+</body>
+</html>

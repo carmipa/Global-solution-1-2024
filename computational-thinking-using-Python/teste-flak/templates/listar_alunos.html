@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Alunos</title>
+    <style>
+        /* Estilos para a tabela */
+    </style>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Data de Nascimento</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Contato</th>
+                <th>Observação</th>
+                <th>Logradouro</th>
+                <th>Número</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>CEP</th>
+                <th>Estado</th>
+                <th>Complemento</th>
+                <th>Observação Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for aluno in alunos %}
+            <tr>
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.sobrenome }}</td>
+                <td>{{ aluno.data_nascimento }}</td>
+                <td>{{ aluno.telefone }}</td>
+                <td>{{ aluno.email }}</td>
+                <td>{{ aluno.contato }}</td>
+                <td>{{ aluno.observacao }}</td>
+                <td>{{ aluno.logradouro }}</td>
+                <td>{{ aluno.numero }}</td>
+                <td>{{ aluno.bairro }}</td>
+                <td>{{ aluno.cidade }}</td>
+                <td>{{ aluno.cep }}</td>
+                <td>{{ aluno.estado }}</td>
+                <td>{{ aluno.complemento }}</td>
+                <td>{{ aluno.observacao_endereco }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
