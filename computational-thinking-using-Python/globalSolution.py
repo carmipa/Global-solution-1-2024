@@ -14,24 +14,26 @@
 
 # importa bibiotecas de cores e para limpesa de tela
 
-import os
+import os 
 from colorama import Fore, Style
+
 
 # Listas globais
 adicionaAlunos = []
 adicionaEscolas = []
-adicionaMateriais = []
-adicionaOrcamentoPagamento = []
+materiais = []  
+adicionaJogos = []
 
 # --- Funções do Menu ---
 
 def exibeMenu():
     # Exibe o menu principal do sistema.
     os.system('cls')  # Limpa a tela
-    print(Fore.BLUE + "**************************************** GLOABAL SOLUTION / BLUE OCEAN ****************************************" + Style.RESET_ALL)
+    print("""                               ＧＬＯＢＡＬ ＳＯＬＵＴＩＯＮ － ＢＬＵＥ ＯＣＥＡＮ""")
+    print(Fore.BLUE + "**************************************** GLOABAL SOLUTION / BLUE OCEAN *****************************************" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
-    print(Fore.BLUE + "*" + Style.RESET_ALL, "MENU PRINCÍPAL                                                                  *")
+    print(Fore.BLUE + "*" + Style.RESET_ALL, "MENU PRINCÍPAL                                                                          *")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*" + Style.RESET_ALL, "1 - CADASTRAR ALUNOS")
@@ -40,7 +42,7 @@ def exibeMenu():
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*" + Style.RESET_ALL, "3 - CADASTRA MATERIAIS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
-    print(Fore.BLUE + "*" + Style.RESET_ALL, "4 - ORÇAMENTO / PAGAMENTO")
+    print(Fore.BLUE + "*" + Style.RESET_ALL, "4 - CADASTRA JOGADAS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*" + Style.RESET_ALL, "LISTAR DADOS")
@@ -50,9 +52,9 @@ def exibeMenu():
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*" + Style.RESET_ALL, "6 - LISTA DE ESCOLAS CADASTRADAS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
-    print(Fore.BLUE + "*" + Style.RESET_ALL, "7 - LISTA DE AGENDAMENTO / OFICINA CADASTRADOS")
+    print(Fore.BLUE + "*" + Style.RESET_ALL, "7 - LISTA DE MATERIAIS CADASTRADOS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
-    print(Fore.BLUE + "*" + Style.RESET_ALL, "8 - LISTA DE ORÇAMENTO / PAGAMENTOS CADASTRADOS")
+    print(Fore.BLUE + "*" + Style.RESET_ALL, "8 - LISTA DE JOGADAS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
@@ -60,7 +62,6 @@ def exibeMenu():
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "****************************************************************************************************************" + Style.RESET_ALL)
-
 
 def escolherOpcao():
     # Lê a opção do usuário e chama a função correspondente.
@@ -81,30 +82,27 @@ def escolherOpcao():
     elif opcao_escolhida == 3:
         cadastrarMateriais()
     elif opcao_escolhida == 4:
-        cadastraNovosOrcamentoPagamento()
+        cadastraJogos()
     elif opcao_escolhida == 5:
         listarAlunos()
     elif opcao_escolhida == 6:
         listarEscolas()
     elif opcao_escolhida == 7:
-        listarAgendaOficina()
+        listarMateriais()
     elif opcao_escolhida == 8:
-        listarOrcacamentoPagamento()
+        listarJogos()
     elif opcao_escolhida == 0:
         finalizarSistema()
     return opcao_escolhida
-
 
 def opcaoInvalida():
     # Exibe uma mensagem de erro para opção inválida.
     print(Fore.RED + "**************************************** OPÇÃO INVÁLIDA ****************************************" + Style.RESET_ALL)
     voltarMenuPrincipal()
 
-
 def voltarMenuPrincipal():
     # Retorna ao menu principal.
     input("\nDigite uma tecla para voltar ao menu: ")
-
 
 # Funções de Cadastro
 
@@ -171,99 +169,68 @@ def cadastrarEscolas():
     voltarMenuPrincipal()
 
 def cadastrarMateriais():
-    """
-    Cadastra novos materiais, armazenando o tipo, peso e quantidade.
-    """
+    # Cadastra um novo agendamento de oficina.
     os.system('cls')
     print(Fore.BLUE + "**************************************** CADASTRAR NOVOS MATERIAIS ****************************************" + Style.RESET_ALL)
-    materiais = []  # Lista para armazenar os materiais
-    print("\n")
-    print(Fore.BLUE + "DETALHES DO MATERIAL" + Style.RESET_ALL)
+    total_materiais = 0
 
     while True:
-        tipo_material =       input("TIPO DO MATERIAL.......: ")
-        peso_material =       input("PESO DO MATERIAL.......: ")
-        quantidade_material = input("QUANTIDADE DE MATERIAL.: ")
+        print("\n")
+        print(Fore.BLUE + "DETALHES DO MATERIAL" + Style.RESET_ALL)
 
-        # Adiciona o material como um dicionário à lista 'materiais'
-        materiais.append({
-            "tipo": tipo_material,
-            "peso": peso_material,
-            "quantidade": quantidade_material
-        })
+        tipo_material = input("TIPO DO MATERIAL.......: ")
+        while True:
+            try:
+                peso_material = float(input("PESO DO MATERIAL.......: "))
+                break
+            except ValueError:
+                print(Fore.RED + "Peso inválido. Digite um número válido." + Style.RESET_ALL)
 
-        # Pergunta ao usuário se deseja adicionar mais materiais
-        continuar = input("Deseja adicionar mais materiais? (s/n): ").lower()
-        if continuar != 's':
+        materiais.append({"tipo": tipo_material, "peso": peso_material})
+        total_materiais += 1
+
+        # Pergunta se o usuário deseja cadastrar mais materiais
+        continuar = input("Deseja cadastrar mais materiais? (S/N): ").upper()
+        if continuar != 'S':
             break
 
     print("\n")
     print(Fore.YELLOW + "**************************************** DADOS DOS MATERIAIS CADASTRADOS COM SUCESSO ****************************************" + Style.RESET_ALL)
     print("\n")
+    print(Fore.YELLOW + "TOTAL DE MATERIAIS CADASTRADOS: " + Style.RESET_ALL, total_materiais)
     print("\n")
-    voltarMenuPrincipal()  # Chamada da função para retornar ao menu principal (não definida aqui)
 
+    # Imprime os materiais cadastrados
+    for i, material in enumerate(materiais):
+        print(Fore.YELLOW + f"Material {i+1}:" + Style.RESET_ALL)
+        print(Fore.YELLOW + f"  Tipo: {material['tipo']}" + Style.RESET_ALL)
+        print(Fore.YELLOW + f"  Peso: {material['peso']} kg" + Style.RESET_ALL)
+        print("\n")
 
-# Função para voltar ao menu principal (deve ser definida em outro local)
-def voltarMenuPrincipal():
-
-def cadastraNovosOrcamentoPagamento():
-    # Cadastra um novo orçamento e pagamento.
-    os.system('cls')
-    print(Fore.BLUE + "**************************************** CADASTRAR NOVO ORÇAMENTO / PAGAMENTO ****************************************" + Style.RESET_ALL)
-    print("\n")
-    print(Fore.BLUE + "ORÇAMENTO DO SERVIÇO" + Style.RESET_ALL)
-
-    orcamentoPagamento = []
-    
-    orcamentoPagamento.append(input("PREÇO DAS PEÇAS................................R$: ")) # 0
-    orcamentoPagamento.append(input("VALOR DA HORA DO TRABALHO......................R$: ")) # 1
-
-    #  Gerenciamento de erro para entrada de horas trabalhadas
-    while True:
-        try:
-            horasTrabalhadas = float(input("QUANTIDADE DE HORAS TRABALHADAS................:   "))  # 2
-            break  # Sai do loop se a entrada for válida
-        except ValueError:
-            print("Entrada inválida. Digite um número válido para as horas trabalhadas.")
-
-    # Calcule o valor da mão de obra
-    valorHora = float(orcamentoPagamento[1])
-    maoDeObra = valorHora * horasTrabalhadas
-    orcamentoPagamento.append(maoDeObra)  # 3
-
-    # Calcule o valor total
-    precoPecas = float(orcamentoPagamento[0])
-    valorTotal = precoPecas + maoDeObra
-    orcamentoPagamento.append(valorTotal)  # 4
-
-    print("\n")
-    print(Fore.BLUE + "PAGAMENTO" + Style.RESET_ALL)
-    orcamentoPagamento.append(input("TIPO DE PAGAMENTO..............................:   "))  # 5
-    orcamentoPagamento.append(input("DESCONTO.......................................:   "))  # 6
-    orcamentoPagamento.append(input("PARCELAMENTO...................................:   "))  # 7
-    orcamentoPagamento.append(input("QUANTIDADE DE PARCELAS.........................:   "))  # 8
-
-    # Calcule o desconto
-    desconto = float(orcamentoPagamento[6])
-    valorComDesconto = valorTotal - (valorTotal * (desconto / 100))
-    orcamentoPagamento.append(valorComDesconto)  # 9
-
-    # Calcule o valor da parcela
-    quantidadeParcelas = int(orcamentoPagamento[7])
-    if quantidadeParcelas > 1:
-        valorParcela = valorComDesconto / quantidadeParcelas
-        orcamentoPagamento.append(valorParcela)  # 10
-    else:
-        orcamentoPagamento.append(valorComDesconto)  # Se for 1 parcela, o valor é o total com desconto
-
-    adicionaOrcamentoPagamento.append(orcamentoPagamento)
-    print("\n")
-    print("\n")
-    print(Fore.YELLOW + "**************************************** DADOS DO ORÇAMENTO CADASTRADOS COM SUCESSO ****************************************" + Style.RESET_ALL)
-    print("\n")
-    print("\n")
     voltarMenuPrincipal()
+
+def cadastraJogos():
+# Cadastra uma nova jogada.
+os.system('cls')
+print(Fore.BLUE + "**************************************** CADASTRAR NOVAS JOGADAS ****************************************" + Style.RESET_ALL)
+print("\n")
+jogos = []
+jogos.append(input("PONTOS DO JOGADOR.......................: "))
+jogos.append(input("QUANTIDADE DE PARTICIPAÇÕES.............: "))
+jogos.append(input("TOTAL DE PONTO..........................: "))
+jogos.append(input("DATA DA PARTICIPAÇÃO....................: "))
+jogos.append(input("OBSERVAÇÃO..............................: "))
+
+adicionaJogos.append(jogos)
+print("\n")
+print("\n")
+print(Fore.YELLOW + "**************************************** DADOS DO JOGADOR CADASTRADOS COM SUCESSO ****************************************" + Style.RESET_ALL)
+print("\n")
+print("\n")
+voltarMenuPrincipal()
+
+# Lista global para armazenar os dados dos jogos
+adicionaJogos = []
 
 # Funções de Listagem 
 
@@ -326,24 +293,20 @@ def listarEscolas():
         print("\n")
     voltarMenuPrincipal()
 
-def listarAgendaOficina():
+def listarMateriais():
     # Lista todos os agendamentos de oficina.
     os.system('cls')
-    print(Fore.YELLOW + "**************************************** LISTA DE AGENDAMENTOS / OFICINA ****************************************" + Style.RESET_ALL)
-    if adicionarAgendamentoOficina:
-        for i, agendamentoOficina in enumerate(adicionarAgendamentoOficina):
-            print(Fore.CYAN + f"Agendamento {i+1}:\n" + Style.RESET_ALL)
+    print(Fore.YELLOW + "**************************************** LISTA DE MATERIAIS ****************************************" + Style.RESET_ALL)
+    if materiais:
+        for i, material in enumerate(materiais):
+            print(Fore.CYAN + f"Material {i+1}:\n" + Style.RESET_ALL)
             print(Fore.CYAN + "----------------------------------------------------------------------------------------------------" + Style.RESET_ALL)
-            print(Fore.CYAN + "DATA.....................................: " + Style.RESET_ALL, agendamentoOficina[0])
-            print(Fore.CYAN + "DESCRIÇÃO DO PROBLEMA DO VEÍCULO.........: " + Style.RESET_ALL, agendamentoOficina[1])
-            print(Fore.CYAN + "DIAGNOSTICO DO VEÍCULO...................: " + Style.RESET_ALL, agendamentoOficina[2])
-            print(Fore.CYAN + "PARTES AFETADAS..........................: " + Style.RESET_ALL, agendamentoOficina[3])
-            print(Fore.CYAN + "PEÇAS USADAS.............................: " + Style.RESET_ALL, agendamentoOficina[4])
-            print(Fore.CYAN + "HORAS TRABALHADAS........................: " + Style.RESET_ALL, agendamentoOficina[5])
+            print(Fore.CYAN + "TIPO MATERIAL............: " + Style.RESET_ALL, material["tipo"])
+            print(Fore.CYAN + "PESO DO MATERIAL.........: " + Style.RESET_ALL, material["peso"])
             print(Fore.CYAN + "----------------------------------------------------------------------------------------------------" + Style.RESET_ALL)
     else:
         print("\n")
-        print(Fore.RED + "**************************************** ! NENHUM AGENDAMENTO / OFICINA CADASTRADO ! ****************************************" + Style.RESET_ALL)
+        print(Fore.RED + "**************************************** ! NENHUM MATERIAL CADASTRADO ! ****************************************" + Style.RESET_ALL)
         print("\n")
     voltarMenuPrincipal()
 

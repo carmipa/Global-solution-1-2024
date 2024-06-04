@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Alunos</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Data de Nascimento</th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th>Contato</th>
+                <th>Observação</th>
+                <th>Logradouro</th>
+                <th>Número</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>CEP</th>
+                <th>Estado</th>
+                <th>Complemento</th>
+                <th>Observação do Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for aluno in alunos %}
+                <tr>
+                    <td>{{ aluno[0] }}</td>
+                    <td>{{ aluno[1] }}</td>
+                    <td>{{ aluno[2] }}</td>
+                    <td>{{ aluno[3] }}</td>
+                    <td>{{ aluno[4] }}</td>
+                    <td>{{ aluno[5] }}</td>
+                    <td>{{ aluno[6] }}</td>
+                    <td>{{ aluno[7] }}</td>
+                    <td>{{ aluno[8] }}</td>
+                    <td>{{ aluno[9] }}</td>
+                    <td>{{ aluno[10] }}</td>
+                    <td>{{ aluno[11] }}</td>
+                    <td>{{ aluno[12] }}</td>
+                    <td>{{ aluno[13] }}</td>
+                    <td>{{ aluno[14] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
