@@ -45,7 +45,7 @@ def exibeMenu():
     print(Fore.BLUE + "*" + Style.RESET_ALL, "4 - CADASTRA JOGADAS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
-    print(Fore.BLUE + "*" + Style.RESET_ALL, " LISTAR DADOS")
+    print(Fore.BLUE + "*" + Style.RESET_ALL, "LISTAR DADOS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*" + Style.RESET_ALL, "5 - LISTA DE ALUNOS CADASTRADOS")
