@@ -100,7 +100,7 @@ public class Escolas extends Enderecos implements Iescola{
 	@Override
 	public String exiibeEscola() {
 		
-		return "Escola " + nomeEscola + " , uma escola da rede " + tipoEscola;
+		return "O nome da escola é: " + nomeEscola + " uma escola da rede " + tipoEscola;
 	}
 
 }

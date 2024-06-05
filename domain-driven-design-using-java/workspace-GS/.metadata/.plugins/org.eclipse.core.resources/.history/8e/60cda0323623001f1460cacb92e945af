@@ -1,8 +1,6 @@
 package br.com.fiap.gs.beans;
 
-import br.com.fiap.gs.interfaces.Iescola;
-
-public class Escolas extends Enderecos implements Iescola{
+public class Escolas extends Enderecos {
 
 	@SuppressWarnings("unused")
 	private int codigoEscola;
@@ -95,12 +93,6 @@ public class Escolas extends Enderecos implements Iescola{
 				+ ", getNomeEscola()=" + getNomeEscola() + ", getTipoEscola()=" + getTipoEscola() + ", getTelefone()="
 				+ getTelefone() + ", getEmail()=" + getEmail() + ", getContato()=" + getContato() + ", getObservacao()="
 				+ getObservacao() + ", getAlunos()=" + getAlunos() + "]";
-	}
-
-	@Override
-	public String exiibeEscola() {
-		
-		return "Escola " + nomeEscola + " , uma escola da rede " + tipoEscola;
 	}
 
 }

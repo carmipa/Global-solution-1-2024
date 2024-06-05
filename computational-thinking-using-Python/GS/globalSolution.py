@@ -33,7 +33,7 @@ def exibeMenu():
     print(Fore.BLUE + "**************************************** GLOABAL SOLUTION / BLUE OCEAN *****************************************" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
-    print(Fore.BLUE + "*" + Style.RESET_ALL, "MENU PRINCÍPAL                                                                          *")
+    print(Fore.BLUE + "*" + Style.RESET_ALL, " MENU PRINCÍPAL                                                                          *")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*" + Style.RESET_ALL, "1 - CADASTRAR ALUNOS")
@@ -45,7 +45,7 @@ def exibeMenu():
     print(Fore.BLUE + "*" + Style.RESET_ALL, "4 - CADASTRA JOGADAS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
-    print(Fore.BLUE + "*" + Style.RESET_ALL, "LISTAR DADOS")
+    print(Fore.BLUE + "*" + Style.RESET_ALL, " LISTAR DADOS")
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*                                                                                                              *" + Style.RESET_ALL)
     print(Fore.BLUE + "*" + Style.RESET_ALL, "5 - LISTA DE ALUNOS CADASTRADOS")
@@ -84,13 +84,13 @@ def escolherOpcao():
     elif opcao_escolhida == 4:
         cadastrarJogadas()
     elif opcao_escolhida == 5:
-        listarAlunos()
+        listarAlunos(alunos)
     elif opcao_escolhida == 6:
-        listarEscolas()
+        listarEscolas(escolas)
     elif opcao_escolhida == 7:
-        listarMateriais()
+        listarMateriais(materiais)
     elif opcao_escolhida == 8:
-        listarJogos()
+        listarJogos(jogos)
     elif opcao_escolhida == 0:
         finalizarSistema()
     return opcao_escolhida
@@ -266,7 +266,7 @@ def cadastrarJogadas():
 
 # --- Funções de Listagem ---
 
-def listarAlunos():
+def listarAlunos(alunos):
     # Lista todos os alunos cadastrados.
     os.system('cls')
     print(Fore.YELLOW + "**************************************** LISTA DE ALUNOS ****************************************" + Style.RESET_ALL)
@@ -296,7 +296,7 @@ def listarAlunos():
         print("\n")
     voltarMenuPrincipal()
 
-def listarEscolas():
+def listarEscolas(escolas):
     # Lista todas as escolas cadastradas.
     os.system('cls')
     print(Fore.YELLOW + "**************************************** LISTA DE ESCOLAS ****************************************" + Style.RESET_ALL)
@@ -325,7 +325,7 @@ def listarEscolas():
         print("\n")
     voltarMenuPrincipal()
 
-def listarMateriais():
+def listarMateriais(materiais):
     # Lista todos os materiais cadastrados.
     os.system('cls')
     print(Fore.YELLOW + "**************************************** LISTA DE MATERIAIS ****************************************" + Style.RESET_ALL)
@@ -342,26 +342,37 @@ def listarMateriais():
         print("\n")
     voltarMenuPrincipal()
 
-def listarJogos():
-    # Lista todas as jogadas cadastradas.
-    os.system('cls')
+def listarJogos(jogos):
+    
+    os.system('cls')  # Limpa a tela
+
     print(Fore.YELLOW + "**************************************** LISTA DE JOGADAS ****************************************" + Style.RESET_ALL)
+
     if jogos:
-        for i, jogada in enumerate(jogos):
-            print(Fore.CYAN + f"Jogada {i+1}:\n" + Style.RESET_ALL)
+        for i, jogada in enumerate(jogos, start=1):  # Começa a enumeração em 1
+            print(Fore.CYAN + f"Jogada {i}:\n" + Style.RESET_ALL)
             print(Fore.CYAN + "----------------------------------------------------------------------------------------------------" + Style.RESET_ALL)
-            for j, dado in enumerate(jogada):
-                print(Fore.CYAN + "PONTOS DO JOGADOR.......................: " + Style.RESET_ALL, dado["pontos"])
+            total_pontos_jogador = 0
+
+            for j, dado in enumerate(jogada, start=1):  # Começa a enumeração em 1
+                print(Fore.CYAN + f"Dado {j}:\n" + Style.RESET_ALL)
+                print(Fore.CYAN + "PONTOS..................................: " + Style.RESET_ALL, dado["pontos"])
                 print(Fore.CYAN + "QUANTIDADE DE PARTICIPAÇÕES.............: " + Style.RESET_ALL, dado["participacao"])
                 print(Fore.CYAN + "TOTAL DE PONTOS.........................: " + Style.RESET_ALL, dado["total_pontos"])
                 print(Fore.CYAN + "DATA DA PARTICIPAÇÃO....................: " + Style.RESET_ALL, dado["data"])
                 print(Fore.CYAN + "OBSERVAÇÃO..............................: " + Style.RESET_ALL, dado["observacao"])
+                total_pontos_jogador += dado["pontos"]
             print(Fore.CYAN + "----------------------------------------------------------------------------------------------------" + Style.RESET_ALL)
+            print(Fore.CYAN + f"TOTAL DE PONTOS DO JOGADOR.............: {total_pontos_jogador}" + Style.RESET_ALL)
+            print("\n") 
+
     else:
         print("\n")
         print(Fore.RED + "**************************************** ! NENHUMA JOGADA CADASTRADA ! ****************************************" + Style.RESET_ALL)
         print("\n")
+
     voltarMenuPrincipal()
+
 
 # --- Funções de Encerramento ---
 
