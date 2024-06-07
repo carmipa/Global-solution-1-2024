@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F99FBD2-844E-E526-39CD-437A847AEAB8" name="INTERVENCOES_CONCERVACOES">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>C1339168-5740-6B86-170D-6ADB650C2879</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="intervencoes_id" id="8EAC25E4-A0EE-E7C7-0826-A44133CE2CFC">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>02F23F09-4D4A-D5CF-7119-DF9D121AD284</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_intervencao" id="2AD8DA81-8E95-4FD4-86CC-E72B34FAE5A0">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>C2CBB420-75AB-D78D-19C0-42ECB4A6E396</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_intervencao" id="CF1D6A83-BA2A-9312-07A9-575DE9CA8E3A">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>889CE008-62D4-BA11-8711-52F78D24BA75</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="9589BFB1-D933-0000-0410-A21E35F3BA96">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>2A79E5D7-3EA6-6F9F-AB75-C0F2B8314AA8</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D13FA5BE-D3F2-E376-D4CE-8EE87FBC1AA5" name="INTERVENCOES_CONCERVACOES_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>F2F8A758-9B64-C851-0840-A1EC9C2979B6</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EAC25E4-A0EE-E7C7-0826-A44133CE2CFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

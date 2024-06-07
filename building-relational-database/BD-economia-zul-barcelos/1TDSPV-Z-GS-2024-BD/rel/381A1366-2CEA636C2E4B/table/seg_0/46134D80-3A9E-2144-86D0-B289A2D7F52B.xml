@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46134D80-3A9E-2144-86D0-B289A2D7F52B" name="LOCALIZAÇÕES">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>117E52D0-6396-04E5-1689-C00EEACA07E4</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="localizacao_id" id="53A8E334-4EA1-44FA-39AB-E284CA028A5B">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>A35506B2-49AF-3339-6F05-20FE3D9F93D9</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="9B6D4B94-3AB4-4D6E-E3D4-8CEE6B840278">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>E03BDF23-7EB0-85CF-1575-2CC884BCF7E8</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude" id="1E42FAB9-B2C2-C8F7-303F-9D44D8B55634">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>D11DF8D9-CDE2-9420-60AF-ACC0BF9BEF14</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude" id="F2F2EC97-2330-A9C5-BD31-45776A9B228D">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>6F00246B-F55B-4596-ADC4-68C873773BAF</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao_local" id="E7D08D90-1653-F74F-1415-5B6A500ACD23">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>3FC88925-E5F4-7512-01A1-08C4D02766D1</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9CB7B1B-DA0E-8A45-1DCC-4245F7E54E7B" name="LOCALIZAÇÕES_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>BBF56FE1-A3D0-972C-AEF0-ABE28BC13AFD</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53A8E334-4EA1-44FA-39AB-E284CA028A5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

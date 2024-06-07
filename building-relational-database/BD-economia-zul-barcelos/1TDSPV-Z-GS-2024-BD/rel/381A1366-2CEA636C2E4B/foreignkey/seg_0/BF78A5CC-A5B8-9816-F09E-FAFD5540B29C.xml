@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BF78A5CC-A5B8-9816-F09E-FAFD5540B29C" containerWithKeyObject="721DC2B3-C504-4CFC-DA58-FC6A6DCFE325" localFKIndex="ADE6BA75-99A4-396D-8152-4130CF3F0165" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES_INTERVENCOES_CONCERVACOES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>C453A4EE-C0E7-7B73-ACD2-F30D386C4911</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<referredTableLongName>INTERVENCOES_CONCERVACOES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0F99FBD2-844E-E526-39CD-437A847AEAB8</referredTableID>
+<keyObject>D13FA5BE-D3F2-E376-D4CE-8EE87FBC1AA5</keyObject>
+<referredKeyID>D13FA5BE-D3F2-E376-D4CE-8EE87FBC1AA5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>intervencoes_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

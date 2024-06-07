@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0A354F89-2BCB-D8A2-747E-DECA6AB5D1AE" containerWithKeyObject="DD7B3993-4BB2-D6BF-FA20-9F08DD78A3F9" localFKIndex="C47DA802-1B48-11FE-2871-86056444C01B" name="LOCALIZACAO_CONDICOES_AMBIENTAIS_CODICOES_AMBIENTAIS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>B082A901-D12C-4FF1-DCE9-9AF7FA12A2AA</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<referredTableLongName>CODICOES_AMBIENTAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BAAB7ED8-F405-5D32-178D-38C5CA0EBC7A</referredTableID>
+<keyObject>351E0B36-FBB4-0AB0-8321-F23AC55CE44B</keyObject>
+<referredKeyID>351E0B36-FBB4-0AB0-8321-F23AC55CE44B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>condicao_ambiental_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

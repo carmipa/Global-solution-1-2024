@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC287946-9E49-74DD-BE62-7CF14F711067" name="POLUICOES_LOCALIZACOES">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:47:32 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="poluicoes_localizacoes" id="735F452E-3080-75EB-04D3-820922D732AE">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:47:51 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="poluicoes_id" id="D7C3039A-21A6-D6AB-1320-C905B9ECA875">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:48:26 UTC</createdTime>
+<generatorID>D0BCC5EC-6A27-BAA9-B050-6E8D76681EAB</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<referedAttribute>01BD76E1-AFB9-927F-6361-4E1F2F6E9B91</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="localizacao_id" id="4F6B930D-7E68-0806-796E-EA8789104878">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:48:31 UTC</createdTime>
+<generatorID>3CF132C9-DB20-CCA3-39E8-8EB2B647C9C7</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<referedAttribute>A35506B2-49AF-3339-6F05-20FE3D9F93D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B234AEA9-EDD9-F3B1-D127-C316869EC5A8" name="POLUICOES_LOCALIZACOES PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:48:20 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>735F452E-3080-75EB-04D3-820922D732AE</attributeRef>
+<attributeRef>4F6B930D-7E68-0806-796E-EA8789104878</attributeRef>
+<attributeRef>D7C3039A-21A6-D6AB-1320-C905B9ECA875</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

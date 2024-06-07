@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="92B0CCA0-09CA-F14B-0D56-7DB24F320B16" name="CODICOES_AMBIENTAIS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:18:27 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="condicao_ambiental_id" id="68EA5BE3-43D4-7704-09F6-D7BEB2157A7E">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:18:56 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_registro" id="5B679A5E-09B9-EBC1-E571-B8D417D7D926">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:19:44 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="temperatura" id="7DF3B032-3075-1005-0E7E-554286CE84C3">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:22:53 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salinidade" id="639E89AD-0367-7AAA-B471-CB2D9F881BE6">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:23:25 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ph" id="384E819B-B0EB-97A5-CEDC-FE8C77EF77E8">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:23:50 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oxigenio_dissolvido" id="B5F2E349-5DA7-D26E-3277-3A5776224474">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:24:14 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9E07B835-7AAE-A1CE-1AB2-AA8888BA0680" name="CODICOES_AMBIENTAIS PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:19:13 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>68EA5BE3-43D4-7704-09F6-D7BEB2157A7E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

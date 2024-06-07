@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="117E52D0-6396-04E5-1689-C00EEACA07E4" name="LOCALIZAÇÕES">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:09:24 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="localizacao_id" id="A35506B2-49AF-3339-6F05-20FE3D9F93D9">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:09:47 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="E03BDF23-7EB0-85CF-1575-2CC884BCF7E8">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:10:08 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="latitude" id="D11DF8D9-CDE2-9420-60AF-ACC0BF9BEF14">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:10:42 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="longitude" id="6F00246B-F55B-4596-ADC4-68C873773BAF">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:15:54 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao_local" id="3FC88925-E5F4-7512-01A1-08C4D02766D1">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:11:43 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BBF56FE1-A3D0-972C-AEF0-ABE28BC13AFD" name="LOCALIZAÇÕES PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:10:05 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A35506B2-49AF-3339-6F05-20FE3D9F93D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

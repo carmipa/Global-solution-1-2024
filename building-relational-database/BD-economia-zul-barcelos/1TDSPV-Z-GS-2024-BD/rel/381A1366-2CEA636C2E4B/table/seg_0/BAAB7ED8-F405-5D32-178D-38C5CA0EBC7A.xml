@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAAB7ED8-F405-5D32-178D-38C5CA0EBC7A" name="CODICOES_AMBIENTAIS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>92B0CCA0-09CA-F14B-0D56-7DB24F320B16</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="condicao_ambiental_id" id="7B464C98-C6EA-BBD2-C0DF-4996AF85580F">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>68EA5BE3-43D4-7704-09F6-D7BEB2157A7E</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_registro" id="ABC79587-4418-C16A-139C-9A71E1194AE8">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>5B679A5E-09B9-EBC1-E571-B8D417D7D926</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="temperatura" id="C4D0A774-B515-3C01-B7FD-B0CB59377664">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>7DF3B032-3075-1005-0E7E-554286CE84C3</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salinidade" id="22910C24-C1B3-8E48-9616-60C34B00C654">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>639E89AD-0367-7AAA-B471-CB2D9F881BE6</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ph" id="14760F36-9E4E-983E-769C-20B48C2E5D04">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>384E819B-B0EB-97A5-CEDC-FE8C77EF77E8</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oxigenio_dissolvido" id="C52AF5B6-0BAA-5D09-AAD1-405CAC490A17">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>B5F2E349-5DA7-D26E-3277-3A5776224474</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="351E0B36-FBB4-0AB0-8321-F23AC55CE44B" name="CODICOES_AMBIENTAIS_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>9E07B835-7AAE-A1CE-1AB2-AA8888BA0680</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B464C98-C6EA-BBD2-C0DF-4996AF85580F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

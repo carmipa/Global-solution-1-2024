@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD7B3993-4BB2-D6BF-FA20-9F08DD78A3F9" name="LOCALIZACAO_CONDICOES_AMBIENTAIS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>C03B4392-FE06-CC06-3813-3C363A976B33</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="localizacao_condicoes_ambientais" id="AF30614A-EB21-9CF2-E8B0-6B5EE6D08935">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>0CB305CB-1FE7-9612-00AA-3EECDA9B0FE7</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODICOES_AMBIENTAIS_condicao_ambiental_id" id="BC2E61FE-2AAE-885D-6A2D-6470709A290D">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>86046870-90E1-51E0-40D2-663EA6E6B482</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A354F89-2BCB-D8A2-747E-DECA6AB5D1AE" referredColumn="7B464C98-C6EA-BBD2-C0DF-4996AF85580F"/>
+</associations>
+</Column>
+<Column name="LOCALIZAÇÕES_localizacao_id" id="A2EF13A6-E1AA-CD64-3752-A301AE50B690">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>DE8B9BAD-AA4B-BFC1-8697-2720AC5C86BD</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32EEAC9A-C50F-050E-9B0F-6F63CABBE050" referredColumn="53A8E334-4EA1-44FA-39AB-E284CA028A5B"/>
+</associations>
+</Column>
+<Column name="condicao_ambiental_id" id="DC68C471-5E35-901C-4B78-C069D343CB35">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 16:01:58 UTC</createdTime>
+<generatorID>34DE1BF3-F6D2-ED78-8706-F2E75CA349A1</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43728A13-2451-889D-4990-A196D8720A12" name="LOCALIZACAO_CONDICOES_AMBIENTAIS_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>727D2376-3940-A8D9-F26D-48249436F820</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF30614A-EB21-9CF2-E8B0-6B5EE6D08935"/>
+<colUsage columnID="DC68C471-5E35-901C-4B78-C069D343CB35"/>
+<colUsage columnID="A2EF13A6-E1AA-CD64-3752-A301AE50B690"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C47DA802-1B48-11FE-2871-86056444C01B" name="LOCALIZACAO_CONDICOES_AMBIENTAIS_CODICOES_AMBIENTAIS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>B082A901-D12C-4FF1-DCE9-9AF7FA12A2AA</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC2E61FE-2AAE-885D-6A2D-6470709A290D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F01A1A98-A514-C663-73F6-73F45396B450" name="LOCALIZACAO_CONDICOES_AMBIENTAIS_LOCALIZAÇÕES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>C46E43C2-13A8-3FEC-1111-3F27A1ED60AC</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2EF13A6-E1AA-CD64-3752-A301AE50B690"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8EC8725A-5384-4B60-B6F3-E7FB601F2C14" name="LOCALIZACOES_ESPECIES_MARINHAS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>DE0CA407-9A00-2488-48F4-3D4A7F9064C8</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_localizacoes_especies" id="8CD7053B-5AE1-D776-0F8C-3D2EB8DD2982">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>C90B0991-0B01-129D-6986-648A47B5EA93</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCALIZAÇÕES_localizacao_id" id="10B8FB09-654E-A7F3-6A17-D87287B9CF12">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>6EF1B16F-C316-4DBE-6A85-318468B4251B</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3FD1EC43-37E3-82DC-AE80-379D5680F699" referredColumn="53A8E334-4EA1-44FA-39AB-E284CA028A5B"/>
+</associations>
+</Column>
+<Column name="ESPECIES_MARINHAS_especie_id" id="49A46E0B-F166-5F8C-6AC6-173AD9182ED4">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>B3B3E591-E7E6-D79F-1A60-8D14F0099490</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6E7994F-1B6D-C0C6-DD0B-54B5CE22440D" referredColumn="4098ECB3-A228-56AA-551E-BC1916A632F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BB2EEF3-938A-E9AF-C4AE-FFA8BA233C68" name="LOCALIZACOES_ESPECIES_MARINHAS_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>865D55F1-2096-0887-8030-7707A58A7E72</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CD7053B-5AE1-D776-0F8C-3D2EB8DD2982"/>
+<colUsage columnID="10B8FB09-654E-A7F3-6A17-D87287B9CF12"/>
+<colUsage columnID="49A46E0B-F166-5F8C-6AC6-173AD9182ED4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC333BF4-68A6-5181-F552-9EC1499FFC4E" name="LOCALIZACOES_ESPECIES_MARINHAS_ESPECIES_MARINHAS_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>6EE98614-1499-43A0-05AB-3FFF18705E36</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49A46E0B-F166-5F8C-6AC6-173AD9182ED4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0625DC5E-908F-1E81-9A3A-D348BD8B6DDE" name="LOCALIZACOES_ESPECIES_MARINHAS_LOCALIZAÇÕES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>1E7C15FD-54F2-173B-C49F-191FD4B3FD21</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10B8FB09-654E-A7F3-6A17-D87287B9CF12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

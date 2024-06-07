@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE0CA407-9A00-2488-48F4-3D4A7F9064C8" name="LOCALIZACOES_ESPECIES_MARINHAS">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:50:24 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_localizacoes_especies" id="C90B0991-0B01-129D-6986-648A47B5EA93">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:50:49 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="localizacao_id" id="6EF1B16F-C316-4DBE-6A85-318468B4251B">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:51:24 UTC</createdTime>
+<generatorID>1E7C15FD-54F2-173B-C49F-191FD4B3FD21</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<referedAttribute>A35506B2-49AF-3339-6F05-20FE3D9F93D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="especie_id" id="B3B3E591-E7E6-D79F-1A60-8D14F0099490">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:51:29 UTC</createdTime>
+<generatorID>6EE98614-1499-43A0-05AB-3FFF18705E36</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<referedAttribute>1FF4CE40-5946-4801-1747-B404308BB253</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="865D55F1-2096-0887-8030-7707A58A7E72" name="LOCALIZACOES_ESPECIES_MARINHAS PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:51:05 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C90B0991-0B01-129D-6986-648A47B5EA93</attributeRef>
+<attributeRef>6EF1B16F-C316-4DBE-6A85-318468B4251B</attributeRef>
+<attributeRef>B3B3E591-E7E6-D79F-1A60-8D14F0099490</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

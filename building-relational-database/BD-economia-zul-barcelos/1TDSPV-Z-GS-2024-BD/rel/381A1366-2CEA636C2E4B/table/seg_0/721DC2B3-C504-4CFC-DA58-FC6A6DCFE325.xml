@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="721DC2B3-C504-4CFC-DA58-FC6A6DCFE325" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>35A91F83-26DB-AD43-AD05-F98E62479F00</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="intervencoes_concervacoes" id="1AF12E30-B041-8F13-829C-1214A500AE62">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>BF6F73FF-92E0-28DE-EB0B-D721605F0735</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCALIZAÇÕES_localizacao_id" id="12928E04-A1E8-10CF-0713-F49D5DBB3F3F">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>3CA786C0-D79E-3BB6-4511-B45A536997AC</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53695324-1E85-9186-CD8F-47BFF0B7B771" referredColumn="53A8E334-4EA1-44FA-39AB-E284CA028A5B"/>
+</associations>
+</Column>
+<Column name="INTERVENCOES_CONCERVACOES_intervencoes_id" id="E41F1C35-B597-5DCD-485E-EE3BDF76CF02">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>7601D310-D9E1-207D-D7BC-96A302C36746</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF78A5CC-A5B8-9816-F09E-FAFD5540B29C" referredColumn="8EAC25E4-A0EE-E7C7-0826-A44133CE2CFC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="728B1BAA-F6B6-E57F-C3D1-FEED73B4FE0C" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>60DC761D-FE42-E188-3E5B-5C677F368082</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AF12E30-B041-8F13-829C-1214A500AE62"/>
+<colUsage columnID="12928E04-A1E8-10CF-0713-F49D5DBB3F3F"/>
+<colUsage columnID="E41F1C35-B597-5DCD-485E-EE3BDF76CF02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB1DACC6-389F-B85D-F6C4-29C5110F0D62" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES_LOCALIZAÇÕES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>BCF82168-C2AF-EF6B-F16E-909763712EA3</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12928E04-A1E8-10CF-0713-F49D5DBB3F3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADE6BA75-99A4-396D-8152-4130CF3F0165" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES_INTERVENCOES_CONCERVACOES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>C453A4EE-C0E7-7B73-ACD2-F30D386C4911</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E41F1C35-B597-5DCD-485E-EE3BDF76CF02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

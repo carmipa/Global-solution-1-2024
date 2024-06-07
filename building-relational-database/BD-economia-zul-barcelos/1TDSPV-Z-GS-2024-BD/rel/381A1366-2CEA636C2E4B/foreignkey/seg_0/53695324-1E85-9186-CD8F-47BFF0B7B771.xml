@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="53695324-1E85-9186-CD8F-47BFF0B7B771" containerWithKeyObject="721DC2B3-C504-4CFC-DA58-FC6A6DCFE325" localFKIndex="AB1DACC6-389F-B85D-F6C4-29C5110F0D62" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES_LOCALIZAÇÕES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>BCF82168-C2AF-EF6B-F16E-909763712EA3</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<referredTableLongName>LOCALIZAÇÕES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>46134D80-3A9E-2144-86D0-B289A2D7F52B</referredTableID>
+<keyObject>E9CB7B1B-DA0E-8A45-1DCC-4245F7E54E7B</keyObject>
+<referredKeyID>E9CB7B1B-DA0E-8A45-1DCC-4245F7E54E7B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>localizacao_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

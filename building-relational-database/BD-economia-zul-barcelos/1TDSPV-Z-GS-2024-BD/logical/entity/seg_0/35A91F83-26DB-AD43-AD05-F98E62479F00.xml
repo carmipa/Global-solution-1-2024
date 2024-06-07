@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35A91F83-26DB-AD43-AD05-F98E62479F00" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:52:01 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="intervencoes_concervacoes" id="BF6F73FF-92E0-28DE-EB0B-D721605F0735">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:52:20 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="localizacao_id" id="3CA786C0-D79E-3BB6-4511-B45A536997AC">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:52:50 UTC</createdTime>
+<generatorID>BCF82168-C2AF-EF6B-F16E-909763712EA3</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<referedAttribute>A35506B2-49AF-3339-6F05-20FE3D9F93D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="intervencoes_id" id="7601D310-D9E1-207D-D7BC-96A302C36746">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:52:59 UTC</createdTime>
+<generatorID>C453A4EE-C0E7-7B73-ACD2-F30D386C4911</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<referedAttribute>02F23F09-4D4A-D5CF-7119-DF9D121AD284</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="60DC761D-FE42-E188-3E5B-5C677F368082" name="INTERVERCOES_CONCERVACOES_LOCALIZACOES PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:52:38 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<engineerTo>
+<item key="381A1366-EB1B-3D71-D58A-2CEA636C2E4B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BF6F73FF-92E0-28DE-EB0B-D721605F0735</attributeRef>
+<attributeRef>3CA786C0-D79E-3BB6-4511-B45A536997AC</attributeRef>
+<attributeRef>7601D310-D9E1-207D-D7BC-96A302C36746</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FDF27D78-4C51-552E-05C5-4D67ED3B8240" containerWithKeyObject="419474A8-D39B-86F4-DD44-22F789D9EEBA" localFKIndex="89C1CB2B-0023-7B6F-1C80-8774A51ADC9A" name="POLUICOES_LOCALIZACOES_POLUICOES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>D0BCC5EC-6A27-BAA9-B050-6E8D76681EAB</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<referredTableLongName>POLUICOES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB447823-0467-84CD-121B-203656457BE4</referredTableID>
+<keyObject>05F9A244-BCEA-1338-A0E5-D5320A79E803</keyObject>
+<referredKeyID>05F9A244-BCEA-1338-A0E5-D5320A79E803</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>poluicoes_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

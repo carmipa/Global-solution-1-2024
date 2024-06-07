@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="419474A8-D39B-86F4-DD44-22F789D9EEBA" name="POLUICOES_LOCALIZACOES">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>AC287946-9E49-74DD-BE62-7CF14F711067</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="poluicoes_localizacoes" id="74AEC85C-AE92-5F29-B781-1AF064922B2E">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>735F452E-3080-75EB-04D3-820922D732AE</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POLUICOES_poluicoes_id" id="FA12668B-1102-DCD4-FAFA-F9D8CE3868EF">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>D7C3039A-21A6-D6AB-1320-C905B9ECA875</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDF27D78-4C51-552E-05C5-4D67ED3B8240" referredColumn="344353C5-3ED0-B6ED-5105-0037725763C7"/>
+</associations>
+</Column>
+<Column name="LOCALIZAÇÕES_localizacao_id" id="DCA261FF-2F4E-7C41-75FA-CDFB4320C7F7">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>4F6B930D-7E68-0806-796E-EA8789104878</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="47C01CF2-7BEE-D797-FDE1-11D345DB38B8" referredColumn="53A8E334-4EA1-44FA-39AB-E284CA028A5B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2FCECEE6-C740-1788-4D5C-6DCE91EBEA37" name="POLUICOES_LOCALIZACOES_PK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>B234AEA9-EDD9-F3B1-D127-C316869EC5A8</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74AEC85C-AE92-5F29-B781-1AF064922B2E"/>
+<colUsage columnID="DCA261FF-2F4E-7C41-75FA-CDFB4320C7F7"/>
+<colUsage columnID="FA12668B-1102-DCD4-FAFA-F9D8CE3868EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89C1CB2B-0023-7B6F-1C80-8774A51ADC9A" name="POLUICOES_LOCALIZACOES_POLUICOES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>D0BCC5EC-6A27-BAA9-B050-6E8D76681EAB</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA12668B-1102-DCD4-FAFA-F9D8CE3868EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D377C13E-F44D-468E-8F13-402DD0D8B31E" name="POLUICOES_LOCALIZACOES_LOCALIZAÇÕES_FK">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:55:55 UTC</createdTime>
+<generatorID>3CF132C9-DB20-CCA3-39E8-8EB2B647C9C7</generatorID>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA261FF-2F4E-7C41-75FA-CDFB4320C7F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
