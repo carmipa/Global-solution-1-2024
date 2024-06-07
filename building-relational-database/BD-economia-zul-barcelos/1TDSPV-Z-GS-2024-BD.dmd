@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="1TDSPV-Z-GS-2024-BD" id="41FB10EB-3B98-BCBE-A527-56FE86CFEAFE" version="3.5">
+<createdBy>Carminati</createdBy>
+<createdTime>2024-06-07 15:07:39 UTC</createdTime>
+<ownerDesignName>1TDSPV-Z-GS-2024-BD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>41FB10EB-3B98-BCBE-A527-56FE86CFEAFE</designId>
+</OSDM_Design>
